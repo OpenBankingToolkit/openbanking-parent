@@ -11,9 +11,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.forgerock.openbanking</groupId>
-    <artifactId>forgerock-openbanking-serialisers</artifactId>
+    <artifactId>forgerock-openbanking-auth</artifactId>
     <packaging>jar</packaging>
-    <name>serialiser</name>
+    <name>auth</name>
 
     <parent>
         <groupId>com.forgerock.openbanking</groupId>

@@ -5,7 +5,7 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.core.serialiser;
+package com.forgerock.openbanking.serialiser;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
