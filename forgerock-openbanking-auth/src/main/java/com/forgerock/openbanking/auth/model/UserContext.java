@@ -5,7 +5,7 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth;
+package com.forgerock.openbanking.auth.model;
 
 import com.forgerock.cert.Psd2CertInfo;
 import com.nimbusds.jwt.JWTClaimsSet;
