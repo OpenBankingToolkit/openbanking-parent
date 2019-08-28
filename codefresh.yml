@@ -5,7 +5,7 @@ stages:
   - prepare
   - build
   - unit-test
-  - package
+  - deploy
 
 steps:
   #  Clone stage
@@ -42,13 +42,13 @@ steps:
     commands:
       - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -DdockerCompose.skip -Ddockerfile.skip -DskipITs verify
 
- # Package stage
-  package-master:
-    title: "Package jar and push to private maven repo"
-    stage: "package"
+ # deploy jar stage
+  deploy-master:
+    title: "deploy jars to private maven repo"
+    stage: "deploy"
     image: maven:3.6.1-jdk-11-slim
     commands:
-      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs package -T 8
+      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs deploy -T 8
     when:
       branch:
         only:
