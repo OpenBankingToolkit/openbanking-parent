@@ -48,6 +48,7 @@ steps:
     stage: "deploy"
     image: qcastel/maven-git:latest
     commands:
+      - git checkout $CF_BRANCH
       - ./release.sh /codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository
     when:
       branch:
