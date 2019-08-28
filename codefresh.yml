@@ -51,6 +51,12 @@ steps:
       - git checkout $CF_BRANCH
       - git reset --hard origin/$CF_BRANCH
       - ./release.sh /codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository
+    environment:
+      - GITHUB_GPG_KEY_ID=${{GITHUB_GPG_KEY_ID}}
+      - GITHUB_GPG_KEY=${{GITHUB_GPG_KEY}}
+      - GITHUB_ACCESS_TOKEN=${{GITHUB_ACCESS_TOKEN}}
+      - FR_PRIVATE_REPO_USER=${{FR_PRIVATE_REPO_USER}}
+      - FR_PRIVATE_REPO_PASSWORD=${{FR_PRIVATE_REPO_PASSWORD}}
     when:
       branch:
         only:

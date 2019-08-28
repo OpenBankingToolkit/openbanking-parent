@@ -7,6 +7,8 @@ git config --global user.name "openbankbot";
 
 git config --global commit.gpgsign true
 git config --global user.signingkey $GITHUB_GPG_KEY_ID
+echo "GITHUB_GPG_KEY_ID = $GITHUB_GPG_KEY_ID"
+
 echo  "$GITHUB_GPG_KEY" > private.key
 gpg --import ./private.key
 
