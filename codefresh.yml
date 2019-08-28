@@ -49,6 +49,7 @@ steps:
     image: qcastel/maven-git-gpg:latest
     commands:
       - git checkout $CF_BRANCH
+      - git reset --hard origin/$CF_BRANCH
       - ./release.sh /codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository
     when:
       branch:
