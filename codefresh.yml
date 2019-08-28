@@ -48,7 +48,7 @@ steps:
     stage: "deploy"
     image: maven:3.6.1-jdk-11-slim
     commands:
-      - ./release.sh
+      - ./release.sh /codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository
     when:
       branch:
         only:
