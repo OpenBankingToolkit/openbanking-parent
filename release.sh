@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+git checkout $CF_BRANCH
+
 # This script will do a release of the artifact according to http://maven.apache.org/maven-release/maven-release-plugin/
 git config --global user.email "openbanking@forgerock.com";
 git config --global user.name "GitBot";
