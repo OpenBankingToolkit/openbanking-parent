@@ -5,6 +5,7 @@ stages:
   - prepare
   - build
   - unit-test
+  - package
 
 steps:
   #  Clone stage
@@ -22,8 +23,7 @@ steps:
     title: "Verify copyrights"
     working-directory: ${{main_clone}}
     commands:
-      - mvn license:check
-      -
+      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository license:check
   # Build stage
   build-stage:
     stage: "build"
@@ -41,3 +41,15 @@ steps:
     working-directory: ${{main_clone}}
     commands:
       - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -DdockerCompose.skip -Ddockerfile.skip -DskipITs verify
+
+ # Package stage
+  package-master:
+    title: "Package jar and push to private maven repo"
+    stage: "package"
+    image: maven:3.6.1-jdk-11-slim
+    commands:
+      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs package -T 8
+    when:
+      branch:
+        only:
+          - master
