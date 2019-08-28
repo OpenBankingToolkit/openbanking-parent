@@ -7,13 +7,6 @@ stages:
 
 steps:
   #  Prepare stage
-  set-global-variables:
-    image: maven:3.6.1-jdk-11-slim
-    stage: "prepare"
-    title: "Set up global variables"
-    commands:
-      - cf_export PROJECT_VERSION=$(mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)
-      - cf_export TAG_VERSION=$(echo ${{CF_BRANCH_TAG_NORMALIZED}} | tr '[:upper:]' '[:lower:]')
   check-copyright:
     image: maven:3.6.1-jdk-11-slim
     stage: "prepare"
