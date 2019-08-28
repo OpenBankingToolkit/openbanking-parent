@@ -18,4 +18,4 @@ then
      MAVEN_REPO_LOCAL="-Dmaven.repo.local=$1"
 fi
 mvn -s settings.xml $MAVEN_REPO_LOCAL -Dusername=$GITHUB_ACCESS_TOKEN release:prepare -B
-mvn -s settings.xml $MAVEN_REPO_LOCAL release:perform -B
+mvn -s settings.xml $MAVEN_REPO_LOCAL release:perform -B -Darguments="-Dmaven.javadoc.skip=true"
