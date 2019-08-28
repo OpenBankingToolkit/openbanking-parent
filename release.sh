@@ -2,8 +2,14 @@
 set -e
 
 # This script will do a release of the artifact according to http://maven.apache.org/maven-release/maven-release-plugin/
-git config --global user.email "openbanking@forgerock.com";
-git config --global user.name "GitBot";
+git config --global user.email "openbankbot@forgerock.com";
+git config --global user.name "openbankbot";
+
+git config --global commit.gpgsign true
+git config --global user.signingkey $GITHUB_GPG_KEY_ID
+#echo  $GITHUB_GPG_KEY > private.key
+#gpg --import ./private.key
+
 
 MAVEN_REPO_LOCAL="";
 
