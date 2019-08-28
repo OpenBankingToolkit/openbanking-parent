@@ -48,7 +48,7 @@ steps:
     stage: "deploy"
     image: maven:3.6.1-jdk-11-slim
     commands:
-      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs deploy -T 8
+      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs deploy -s settings.xml -T 8
     when:
       branch:
         only:
