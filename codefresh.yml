@@ -46,7 +46,7 @@ steps:
   deploy-master:
     title: "deploy jars to private maven repo"
     stage: "deploy"
-    image: qcastel/maven-git:latest
+    image: qcastel/maven-git-gpg:latest
     commands:
       - git checkout $CF_BRANCH
       - ./release.sh /codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository

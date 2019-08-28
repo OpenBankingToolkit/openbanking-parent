@@ -7,13 +7,13 @@ git config --global user.name "openbankbot";
 
 git config --global commit.gpgsign true
 git config --global user.signingkey $GITHUB_GPG_KEY_ID
-#echo  $GITHUB_GPG_KEY > private.key
-#gpg --import ./private.key
+echo  "$GITHUB_GPG_KEY" > private.key
+gpg --import ./private.key
 
 
 MAVEN_REPO_LOCAL="";
 
-if [ ! -z "$1" ]
+if [ -n "$1" ]
 then
      MAVEN_REPO_LOCAL="-Dmaven.repo.local=$1"
 fi
