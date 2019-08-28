@@ -1,0 +1,46 @@
+version: "1.0"
+
+stages:
+  - prepare
+  - build
+  - unit-test
+
+steps:
+  #  Prepare stage
+  set-global-variables:
+    image: maven:3.6.1-jdk-11-slim
+    stage: "prepare"
+    title: "Set up global variables"
+    commands:
+      - cf_export PROJECT_VERSION=$(mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)
+      - cf_export TAG_VERSION=$(echo ${{CF_BRANCH_TAG_NORMALIZED}} | tr '[:upper:]' '[:lower:]')
+  check-copyright:
+    image: maven:3.6.1-jdk-11-slim
+    stage: "prepare"
+    title: "Verify copyrights"
+    working-directory: ${{main_clone}}
+    commands:
+      - mvn license:check
+  # Build stage
+  build-stage:
+    type: parallel
+    stage: "build"
+    steps:
+      compile:
+        image: maven:3.6.1-jdk-11-slim
+        title: "Compile, build and install artifact"
+        working-directory: ${{main_clone}}
+        commands:
+          - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs clean install -T 8
+
+  test-stage:
+    type: parallel
+    stage: "unit-test"
+    steps:
+      # Unit-test stage
+      unit-test:
+        image: maven:3.6.1-jdk-11-slim
+        title: "Run unit tests"
+        working-directory: ${{main_clone}}
+        commands:
+          - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -DdockerCompose.skip -Ddockerfile.skip -DskipITs verify
