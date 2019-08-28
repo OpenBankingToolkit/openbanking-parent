@@ -1,11 +1,20 @@
 version: "1.0"
 
 stages:
+  - clone
   - prepare
   - build
   - unit-test
 
 steps:
+  #  Clone stage
+  main_clone:
+    title: Cloning main repository...
+    stage: "clone"
+    type: git-clone
+    repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
+    revision: '${{CF_REVISION}}'
+
   #  Prepare stage
   check-copyright:
     image: maven:3.6.1-jdk-11-slim
@@ -14,26 +23,21 @@ steps:
     working-directory: ${{main_clone}}
     commands:
       - mvn license:check
+      -
   # Build stage
   build-stage:
-    type: parallel
     stage: "build"
-    steps:
-      compile:
-        image: maven:3.6.1-jdk-11-slim
-        title: "Compile, build and install artifact"
-        working-directory: ${{main_clone}}
-        commands:
-          - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs clean install -T 8
+    image: maven:3.6.1-jdk-11-slim
+    title: "Compile, build and install artifact"
+    working-directory: ${{main_clone}}
+    commands:
+      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -Ddockerfile.skip -DdockerCompose.skip -DskipTests -DskipITs clean install -T 8
 
+  # test stage
   test-stage:
-    type: parallel
     stage: "unit-test"
-    steps:
-      # Unit-test stage
-      unit-test:
-        image: maven:3.6.1-jdk-11-slim
-        title: "Run unit tests"
-        working-directory: ${{main_clone}}
-        commands:
-          - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -DdockerCompose.skip -Ddockerfile.skip -DskipITs verify
+    image: maven:3.6.1-jdk-11-slim
+    title: "Run unit tests"
+    working-directory: ${{main_clone}}
+    commands:
+      - mvn -Dmaven.repo.local=/codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository -DdockerCompose.skip -Ddockerfile.skip -DskipITs verify
