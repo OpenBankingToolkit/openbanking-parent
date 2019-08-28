@@ -5,7 +5,7 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.model.csr;
+package com.forgerock.openbanking.ssl.model.csr;
 
 import org.bouncycastle.pkcs.PKCS10CertificationRequest;
 

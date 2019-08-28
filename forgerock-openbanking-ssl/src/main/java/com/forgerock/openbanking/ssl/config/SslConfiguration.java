@@ -5,9 +5,9 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.config.ssl;
+package com.forgerock.openbanking.ssl.config;
 
-import com.forgerock.openbanking.auth.exceptions.SslConfigurationFailure;
+import com.forgerock.openbanking.ssl.exceptions.SslConfigurationFailure;
 import org.apache.http.HttpRequest;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;

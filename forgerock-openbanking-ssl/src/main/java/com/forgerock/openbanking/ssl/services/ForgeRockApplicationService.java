@@ -5,9 +5,9 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.services;
+package com.forgerock.openbanking.ssl.services;
 
-import com.forgerock.openbanking.auth.model.ForgeRockApplicationResponse;
+import com.forgerock.openbanking.ssl.model.ForgeRockApplicationResponse;
 import org.springframework.web.client.RestTemplate;
 
 public interface ForgeRockApplicationService {

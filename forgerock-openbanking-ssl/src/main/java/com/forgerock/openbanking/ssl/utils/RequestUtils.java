@@ -5,7 +5,7 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.utils;
+package com.forgerock.openbanking.ssl.utils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.security.cert.X509Certificate;

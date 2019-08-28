@@ -16,8 +16,8 @@ import com.forgerock.openbanking.auth.model.ApplicationIdentity;
 import com.forgerock.openbanking.auth.model.OBRIRole;
 import com.forgerock.openbanking.auth.model.UserContext;
 import com.forgerock.openbanking.auth.services.directory.DirectoryService;
-import com.forgerock.openbanking.auth.services.keystore.KeyStoreService;
-import com.forgerock.openbanking.auth.utils.RequestUtils;
+import com.forgerock.openbanking.ssl.services.keystore.KeyStoreService;
+import com.forgerock.openbanking.ssl.utils.RequestUtils;
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.jwk.JWK;
 import lombok.extern.slf4j.Slf4j;
@@ -50,6 +50,7 @@ import java.util.*;
 public class ForgeRockAppMATLService implements UserDetailsService {
 
     public Resource forgerockSelfSignedRootCertificatePem;
+    //TODO remove directory dependency
     private DirectoryService directoryService;
     private KeyStoreService keyStoreService;
     private MATLSConfigurationProperties matlsConfigurationProperties;

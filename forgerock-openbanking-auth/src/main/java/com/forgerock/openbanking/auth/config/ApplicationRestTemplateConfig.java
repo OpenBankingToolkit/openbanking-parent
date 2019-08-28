@@ -7,27 +7,16 @@
  */
 package com.forgerock.openbanking.auth.config;
 
-import com.forgerock.openbanking.auth.model.ForgeRockApplicationResponse;
-import com.forgerock.openbanking.auth.services.CertificateLoader;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.retry.backoff.ExponentialBackOffPolicy;
 import org.springframework.retry.policy.SimpleRetryPolicy;
 import org.springframework.retry.support.RetryTemplate;
-
-import java.util.Collection;
 
 public class ApplicationRestTemplateConfig {
 
     private static final int RETRY_INITIAL_INTERVAL = 1000;
     private static final int RETRY_MAX_ATTEMPTS = 30;
     private static final double RETRY_EXPONENTIAL_MULTIPLIER = 1.1;
-
-    private ForgeRockApplicationResponse currentApplication;
-    @Autowired
-    private CertificateLoader certificateLoader;
-    @Autowired
-    private Collection<ApplicationRestTemplate> applicationRestTemplates;
 
     @Bean
     public RetryTemplate retryTemplate() {

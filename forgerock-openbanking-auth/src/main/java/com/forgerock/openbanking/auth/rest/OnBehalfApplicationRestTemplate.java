@@ -7,19 +7,16 @@
  */
 package com.forgerock.openbanking.auth.rest;
 
-import com.forgerock.openbanking.auth.config.ApplicationRestTemplateConfig;
-import com.forgerock.openbanking.auth.config.ssl.SslConfiguration;
-import com.forgerock.openbanking.auth.exceptions.SslConfigurationFailure;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.forgerock.openbanking.ssl.config.SslConfiguration;
+import com.forgerock.openbanking.ssl.exceptions.SslConfigurationFailure;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 public class OnBehalfApplicationRestTemplate extends RestTemplate {
-    private static final Logger LOGGER = LoggerFactory.getLogger(ApplicationRestTemplateConfig.class);
-
     private boolean checkHostname;
 
     @Autowired

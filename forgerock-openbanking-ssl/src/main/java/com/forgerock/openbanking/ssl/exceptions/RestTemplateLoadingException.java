@@ -5,7 +5,7 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.exceptions;
+package com.forgerock.openbanking.ssl.exceptions;
 
 public class RestTemplateLoadingException extends Exception {
     public RestTemplateLoadingException() {
