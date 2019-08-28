@@ -5,7 +5,7 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.services.keystore;
+package com.forgerock.openbanking.ssl.services.keystore;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;

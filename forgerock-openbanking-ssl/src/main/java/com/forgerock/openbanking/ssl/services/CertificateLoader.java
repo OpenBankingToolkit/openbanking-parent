@@ -5,12 +5,12 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.services;
+package com.forgerock.openbanking.ssl.services;
 
 import com.forgerock.cert.utils.CertificateUtils;
-import com.forgerock.openbanking.auth.exceptions.RestTemplateLoadingException;
-import com.forgerock.openbanking.auth.model.ForgeRockApplicationResponse;
-import com.forgerock.openbanking.auth.services.keystore.KeyStoreService;
+import com.forgerock.openbanking.ssl.exceptions.RestTemplateLoadingException;
+import com.forgerock.openbanking.ssl.model.ForgeRockApplicationResponse;
+import com.forgerock.openbanking.ssl.services.keystore.KeyStoreService;
 import com.nimbusds.jose.jwk.AsymmetricJWK;
 import com.nimbusds.jose.jwk.JWK;
 import org.slf4j.Logger;

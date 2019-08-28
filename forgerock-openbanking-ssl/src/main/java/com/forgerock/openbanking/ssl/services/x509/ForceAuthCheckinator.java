@@ -5,7 +5,7 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.services.x509;
+package com.forgerock.openbanking.ssl.services.x509;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

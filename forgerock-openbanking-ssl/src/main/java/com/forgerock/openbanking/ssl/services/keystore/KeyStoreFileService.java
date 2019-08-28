@@ -5,15 +5,15 @@
  * or with one of its affiliates. All use shall be exclusively subject
  * to such license between the licensee and ForgeRock AS.
  */
-package com.forgerock.openbanking.auth.services.keystore;
+package com.forgerock.openbanking.ssl.services.keystore;
 
 import com.forgerock.cert.eidas.EidasCertType;
 import com.forgerock.cert.eidas.EidasInformation;
 import com.forgerock.cert.exception.InvalidKeyType;
 import com.forgerock.cert.utils.CertificateConfiguration;
 import com.forgerock.cert.utils.CertificateUtils;
-import com.forgerock.openbanking.auth.model.csr.CSRGenerationResponse;
-import com.forgerock.openbanking.auth.utils.JwkUtils;
+import com.forgerock.openbanking.ssl.model.csr.CSRGenerationResponse;
+import com.forgerock.openbanking.ssl.utils.JwkUtils;
 import com.nimbusds.jose.Algorithm;
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.jwk.KeyUse;
@@ -137,7 +137,7 @@ public abstract class KeyStoreFileService {
      * @param sigAlg    The algorithm used to sign the Certificate Request
      * @param certificateConfiguration The Identity that will become the subject of the requested certificate.
      * @param keyUse    The type of key being requested
-     * @return - A {@link com.forgerock.openbanking.auth.model.csr.CSRGenerationResponse}
+     * @return - A {@link CSRGenerationResponse}
      *
      *
      * @throws CertificateException - When the Certificate Request could not be generated.
