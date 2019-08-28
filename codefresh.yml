@@ -46,7 +46,7 @@ steps:
   deploy-master:
     title: "deploy jars to private maven repo"
     stage: "deploy"
-    image: maven:3.6.1-jdk-11-slim
+    image: qcastel/maven-git:latest
     commands:
       - ./release.sh /codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository
     when:
