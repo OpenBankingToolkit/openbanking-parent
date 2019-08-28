@@ -7,8 +7,7 @@
     to such license between the licensee and ForgeRock AS.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.forgerock.openbanking</groupId>
     <artifactId>forgerock-openbanking-ssl</artifactId>
@@ -18,10 +17,14 @@
     <parent>
         <groupId>com.forgerock.openbanking</groupId>
         <artifactId>forgerock-openbanking-starter-parent</artifactId>
-        <version>1.0</version>
+        <version>1.0.3</version>
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>com.forgerock</groupId>
+            <artifactId>forgerock-eidas-psd2-cert-sdk</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-hateoas</artifactId>
@@ -33,7 +36,6 @@
         <dependency>
             <groupId>com.forgerock.openbanking</groupId>
             <artifactId>forgerock-openbanking-serialisers</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.retry</groupId>
@@ -54,10 +56,6 @@
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-joda</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.forgerock</groupId>
-            <artifactId>forgerock-eidas-psd2-cert-sdk</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
