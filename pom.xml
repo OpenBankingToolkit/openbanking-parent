@@ -95,7 +95,22 @@
             <!-- OpenBanking -->
             <dependency>
                 <groupId>com.forgerock.openbanking</groupId>
-                <artifactId>forgerock-openbanking-commons</artifactId>
+                <artifactId>forgerock-openbanking-serialisers</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.forgerock.openbanking</groupId>
+                <artifactId>forgerock-openbanking-auth</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.forgerock.openbanking</groupId>
+                <artifactId>forgerock-openbanking-ssl</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.forgerock.openbanking</groupId>
+                <artifactId>forgerock-openbanking-upgrade</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
