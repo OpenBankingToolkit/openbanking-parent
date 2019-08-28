@@ -15,7 +15,7 @@
     <name>ForgeRock OpenBanking Reference Implementation - Parent</name>
     <groupId>com.forgerock.openbanking</groupId>
     <artifactId>forgerock-openbanking-starter-parent</artifactId>
-    <version>1.0</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -390,6 +390,12 @@
             </releases>
         </repository>
     </repositories>
+
+    <scm>
+        <connection>scm:git:https://github.com/ForgeCloud/ob-build.git</connection>
+        <developerConnection>scm:git:https://github.com/ForgeCloud/ob-build.git</developerConnection>
+        <url>https://github.com/ForgeCloud/ob-build.git</url>
+    </scm>
 
     <distributionManagement>
         <repository>
