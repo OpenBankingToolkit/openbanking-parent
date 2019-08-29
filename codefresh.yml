@@ -46,10 +46,11 @@ steps:
   deploy-master:
     title: "deploy jars to private maven repo"
     stage: "deploy"
-    image: qcastel/maven-git-gpg:latest
+    image: qcastel / docker-ob-release
     commands:
       - git checkout $CF_BRANCH
       - git reset --hard origin/$CF_BRANCH
+      - cp /ob-release/* ./
       - ./release.sh /codefresh/volume/${{CF_BRANCH_TAG_NORMALIZED}}/.m2/repository
     environment:
       - GITHUB_GPG_KEY_ID=${{GITHUB_GPG_KEY_ID}}
