@@ -9,7 +9,7 @@ git config --global commit.gpgsign true
 git config --global user.signingkey $GITHUB_GPG_KEY_ID
 echo "GITHUB_GPG_KEY_ID = $GITHUB_GPG_KEY_ID"
 
-echo  "$GITHUB_GPG_KEY" | base64 -D > private.key
+echo  "$GITHUB_GPG_KEY" | base64 -d > private.key
 gpg --import ./private.key
 
 
