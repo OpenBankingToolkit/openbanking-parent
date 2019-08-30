@@ -46,7 +46,7 @@ steps:
   deploy-master:
     title: "deploy jars to private maven repo"
     stage: "deploy"
-    image: qcastel / docker-ob-release
+    image: r.cfcr.io/openbanking/ob-release:latest
     commands:
       - git checkout $CF_BRANCH
       - git reset --hard origin/$CF_BRANCH
