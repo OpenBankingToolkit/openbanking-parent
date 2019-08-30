@@ -59,6 +59,7 @@ steps:
       - FR_PRIVATE_REPO_USER=${{FR_PRIVATE_REPO_USER}}
       - FR_PRIVATE_REPO_PASSWORD=${{FR_PRIVATE_REPO_PASSWORD}}
     when:
-      branch:
-        only:
-          - master
+      condition:
+        all:
+          noSkipCiInCommitMessage: 'includes(lower("${{CF_COMMIT_MESSAGE}}"), "[maven-release-plugin]") == false'
+          masterBranch: '"${{CF_BRANCH}}" == "master"'
