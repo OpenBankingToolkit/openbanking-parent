@@ -81,42 +81,10 @@
         <mockito.core.version>2.28.2</mockito.core.version>
         <assertj.core.version>3.13.2</assertj.core.version>
     </properties>
-
-    <modules>
-        <module>forgerock-openbanking-serialisers</module>
-        <module>forgerock-openbanking-ssl</module>
-        <module>forgerock-openbanking-auth</module>
-        <module>forgerock-openbanking-upgrade</module>
-    </modules>
-
+    
     <dependencyManagement>
         <dependencies>
             <!-- OpenBanking -->
-            <dependency>
-                <groupId>com.forgerock.openbanking</groupId>
-                <artifactId>forgerock-openbanking-serialisers</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.forgerock.openbanking</groupId>
-                <artifactId>forgerock-openbanking-auth</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.forgerock.openbanking</groupId>
-                <artifactId>forgerock-openbanking-ssl</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.forgerock.openbanking</groupId>
-                <artifactId>forgerock-openbanking-upgrade</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.forgerock.openbanking</groupId>
-                <artifactId>openbanking-sdk</artifactId>
-                <version>${ob.sdk.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.forgerock</groupId>
                 <artifactId>forgerock-eidas-psd2-cert-sdk</artifactId>
