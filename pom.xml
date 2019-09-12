@@ -93,7 +93,7 @@
             <dependency>
                 <groupId>com.forgerock.openbanking</groupId>
                 <artifactId>openbanking-sdk</artifactId>
-                <version>${ob.sdk.version&gt;}</version>
+                <version>${ob.sdk.version}</version>
             </dependency>
             <!-- Spring -->
             <dependency>
