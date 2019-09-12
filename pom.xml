@@ -37,7 +37,7 @@
 
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 
-        <ob.sdk.version>3.1.2.3</ob.sdk.version>
+        <ob.sdk.version>3.1.2.5</ob.sdk.version>
         <eidas.psd2.sdk.version>1.11</eidas.psd2.sdk.version>
 
         <jodatime.version>2.9.9</jodatime.version>
@@ -89,6 +89,11 @@
                 <groupId>com.forgerock</groupId>
                 <artifactId>forgerock-eidas-psd2-cert-sdk</artifactId>
                 <version>${eidas.psd2.sdk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.forgerock.openbanking</groupId>
+                <artifactId>openbanking-sdk</artifactId>
+                <version>${ob.sdk.version>}</version>
             </dependency>
             <!-- Spring -->
             <dependency>
