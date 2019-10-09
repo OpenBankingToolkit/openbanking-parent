@@ -38,7 +38,7 @@
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 
         <ob.sdk.version>3.1.2.5</ob.sdk.version>
-        <eidas.psd2.sdk.version>1.11</eidas.psd2.sdk.version>
+        <eidas.psd2.sdk.version>1.12</eidas.psd2.sdk.version>
 
         <jodatime.version>2.9.9</jodatime.version>
         <apache.version>4.5.9</apache.version>
