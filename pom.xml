@@ -39,6 +39,7 @@
 
         <ob.sdk.version>3.1.2.5</ob.sdk.version>
         <eidas.psd2.sdk.version>1.12</eidas.psd2.sdk.version>
+	<spring-security-multi-auth-starter.version>0.0.15</spring-security-multi-auth-starter.version>
 
         <jodatime.version>2.9.9</jodatime.version>
         <apache.version>4.5.9</apache.version>
@@ -94,6 +95,11 @@
                 <groupId>com.forgerock.openbanking</groupId>
                 <artifactId>openbanking-sdk</artifactId>
                 <version>${ob.sdk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.forgerock</groupId>
+                <artifactId>spring-security-multi-auth-starter</artifactId>
+                <version>${spring-security-multi-auth-starter.version}</version>
             </dependency>
             <!-- Spring -->
             <dependency>
