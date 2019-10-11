@@ -82,7 +82,7 @@
         <mockito.core.version>2.28.2</mockito.core.version>
         <assertj.core.version>3.13.2</assertj.core.version>
         <reactor-spring.version>1.0.1.RELEASE</reactor-spring.version>
-        <spring.version>2.1.5.RELEASE</spring.version>
+        <spring-flux.version>2.1.5.RELEASE</spring-flux.version>
 
     </properties>
     
@@ -341,7 +341,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-webflux</artifactId>
-                <version>${spring.version}</version>
+                <version>${spring-flux.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectreactor</groupId>
