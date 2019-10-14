@@ -85,7 +85,8 @@
         <spring-flux.version>2.1.5.RELEASE</spring-flux.version>
         <model-mapper.version>2.3.2</model-mapper.version>
 
-        <javax.version>1.3.2</javax.version>
+        <javax.annotations.version>1.3.2</javax.annotations.version>
+
     </properties>
     
     <dependencyManagement>
@@ -139,6 +140,7 @@
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${javax.version}</version>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>joda-time</groupId>
@@ -351,7 +353,7 @@
             <dependency>
                 <groupId>javax.annotation</groupId>
                 <artifactId>javax.annotation-api</artifactId>
-                <version>${javax.version}</version>
+                <version>${javax.annotations.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
