@@ -39,7 +39,7 @@
 
         <ob.sdk.version>3.1.2.5</ob.sdk.version>
         <eidas.psd2.sdk.version>1.12</eidas.psd2.sdk.version>
-        <spring-security-multi-auth-starter.version>0.0.46</spring-security-multi-auth-starter.version>
+        <spring-security-multi-auth-starter.version>2.2.1.0.0.47</spring-security-multi-auth-starter.version>
 
         <jodatime.version>2.9.9</jodatime.version>
         <apache.version>4.5.9</apache.version>
@@ -103,7 +103,7 @@
                 <version>${ob.sdk.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.forgerock</groupId>
+                <groupId>dev.openbanking4.spring.security</groupId>
                 <artifactId>spring-security-multi-auth-starter</artifactId>
                 <version>${spring-security-multi-auth-starter.version}</version>
             </dependency>
@@ -399,6 +399,10 @@
             <releases>
                 <enabled>true</enabled>
             </releases>
+        </repository>
+        <repository>
+            <id>jcenter</id>
+            <url>https://jcenter.bintray.com/</url>
         </repository>
     </repositories>
 
