@@ -26,7 +26,7 @@ jobs:
       uses: benjefferies/create-bintray-package@master
       with:
         bintray-user: openbankingtoolkit
-        bintray-token: ${{ secrets.BINTRAY_ACCESS_TOKEN }}
+        bintray-token: ${{ secrets.BINTRAY_API_KEY }}
 
         owner: openbanking-toolkit
         repo: OpenBankingToolKit
@@ -55,7 +55,7 @@ jobs:
         maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip"
         maven-repo-server-id: bintray-openbankingtoolkit-OpenBankingToolkit
         maven-repo-server-username: openbankingtoolkit
-        maven-repo-server-password: ${{ secrets.PRIVATE_REPO_PASSWORD }}
+        maven-repo-server-password: ${{ secrets.BINTRAY_API_KEY }}
 
         git-release-bot-name: "openbankbot"
         git-release-bot-email: "openbankbot@forgerock.com"
