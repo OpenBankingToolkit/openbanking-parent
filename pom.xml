@@ -409,9 +409,9 @@
     </repositories>
 
     <scm>
-        <connection>scm:git:https://github.com/OpenBankingToolkit/openbanking-build.git</connection>
-        <developerConnection>scm:git:https://github.com/OpenBankingToolkit/openbanking-build.git</developerConnection>
-        <url>https://github.com/OpenBankingToolkit/openbanking-build.git</url>
+        <connection>scm:git:https://github.com/OpenBankingToolkit/openbanking-parent.git</connection>
+        <developerConnection>scm:git:https://github.com/OpenBankingToolkit/openbanking-parent.git</developerConnection>
+        <url>https://github.com/OpenBankingToolkit/openbanking-parent.git</url>
     <tag>HEAD</tag>
   </scm>
 
