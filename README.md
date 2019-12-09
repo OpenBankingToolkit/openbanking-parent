@@ -1,7 +1,7 @@
 [<img src="https://raw.githubusercontent.com/ForgeRock/forgerock-logo-dev/master/forgerock-logo-dev.png" align="right" width="220px"/>](https://developer.forgerock.com/)
 
 ForgeRock OpenBanking Parent
-========================
+==========================
 
 Maven parent used by the ForgeRock OpenBanking maven project.
 It contains all the dependencies, their specific version and remote repositories.
