@@ -419,7 +419,7 @@
         <repository>
             <id>bintray-openbankingtoolkit-OpenBankingToolkit</id>
             <name>OpenBankingToolkit Releases Repository</name>
-            <url>https://api.bintray.com/maven/openbanking-toolkit/OpenBankingToolKit/forgerock-openbanking-starter-parent/;publish=1</url>
+            <url>https://api.bintray.com/maven/openbanking-toolkit/OpenBankingToolKit/openbanking-parent/;publish=1</url>
         </repository>
     </distributionManagement>
 
