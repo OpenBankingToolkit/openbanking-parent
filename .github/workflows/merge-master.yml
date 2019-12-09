@@ -53,6 +53,9 @@ jobs:
         gpg-key: ${{ secrets.GITHUB_GPG_KEY }}
 
         maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip"
+        maven-repo-server-id: bintray-openbankingtoolkit-OpenBankingToolkit
+        maven-repo-server-username: openbankingtoolkit
+        maven-repo-server-password: ${{ secrets.PRIVATE_REPO_PASSWORD }}
 
         git-release-bot-name: "openbankbot"
         git-release-bot-email: "openbankbot@forgerock.com"

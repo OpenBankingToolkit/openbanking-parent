@@ -403,17 +403,6 @@
 
     <repositories>
         <repository>
-            <id>forgerock-private-releases</id>
-            <name>ForgeRock Private Releases Repository</name>
-            <url>http://maven.forgerock.org/repo/private-releases</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-        <repository>
             <id>jcenter</id>
             <url>https://jcenter.bintray.com/</url>
         </repository>
@@ -428,11 +417,12 @@
 
     <distributionManagement>
         <repository>
-            <id>forgerock-private-releases</id>
-            <name>ForgeRock Private Releases Repository</name>
-            <url>http://maven.forgerock.org/repo/private-releases</url>
+            <id>bintray-openbankingtoolkit-OpenBankingToolkit</id>
+            <name>OpenBankingToolkit Releases Repository</name>
+            <url>https://api.bintray.com/maven/openbanking-toolkit/OpenBankingToolKit/openbanking-parent/;publish=1</url>
         </repository>
     </distributionManagement>
+
 
     <build>
         <pluginManagement>
