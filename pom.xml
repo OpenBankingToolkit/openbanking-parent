@@ -95,7 +95,7 @@
         <mockito.core.version>3.0.0</mockito.core.version>
         <assertj.core.version>3.13.2</assertj.core.version>
         <reactor-spring.version>1.0.1.RELEASE</reactor-spring.version>
-        <spring-flux.version>2.1.5.RELEASE</spring-flux.version>
+        <spring-flux.version>2.2.2.RELEASE</spring-flux.version>
         <model-mapper.version>2.3.2</model-mapper.version>
 
         <javax.annotations.version>1.3.2</javax.annotations.version>
