@@ -74,7 +74,7 @@
         <unirest-java.version>2.3.06</unirest-java.version>
         <jjwt.version>0.10.5</jjwt.version>
         <minimal-json.version>0.9.5</minimal-json.version>
-        <jmockdata.version>3.1.0</jmockdata.version>
+        <jmockdata.version>4.2.0</jmockdata.version>
         <docker-compose-rule-junit4.version>0.32.0</docker-compose-rule-junit4.version>
         <docker-compose-maven-plugin.version>2.2.0</docker-compose-maven-plugin.version>
         <jackson-datatype-joda.version>2.9.7</jackson-datatype-joda.version>
