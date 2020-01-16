@@ -111,8 +111,8 @@
         <dependencies>
             <!-- OpenBanking -->
             <dependency>
-                <groupId>com.forgerock</groupId>
-                <artifactId>forgerock-eidas-psd2-cert-sdk</artifactId>
+                <groupId>com.forgerock.openbanking</groupId>
+                <artifactId>eidas-psd2-sdk</artifactId>
                 <version>${eidas.psd2.sdk.version}</version>
             </dependency>
             <dependency>
