@@ -97,6 +97,7 @@
         <reactor-spring.version>1.0.1.RELEASE</reactor-spring.version>
         <spring-flux.version>2.1.5.RELEASE</spring-flux.version>
         <model-mapper.version>2.3.2</model-mapper.version>
+        <commons-csv.version>1.7</commons-csv.version>
 
         <javax.annotations.version>1.3.2</javax.annotations.version>
         <spring-boot-graceful-shutdown.version>2.1.1</spring-boot-graceful-shutdown.version>
@@ -148,7 +149,11 @@
             </dependency>
 
             <!-- Other -->
-
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-csv</artifactId>
+                <version>${commons-csv.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
