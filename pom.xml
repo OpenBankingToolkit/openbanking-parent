@@ -436,8 +436,8 @@
     </repositories>
 
     <scm>
-        <connection>scm:git:https://github.com/OpenBankingToolkit/openbanking-parent.git</connection>
-        <developerConnection>scm:git:https://github.com/OpenBankingToolkit/openbanking-parent.git</developerConnection>
+        <connection>scm:git:git@github.com:OpenBankingToolkit/openbanking-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:OpenBankingToolkit/openbanking-parent.git</developerConnection>
         <url>https://github.com/OpenBankingToolkit/openbanking-parent.git</url>
     <tag>HEAD</tag>
   </scm>
