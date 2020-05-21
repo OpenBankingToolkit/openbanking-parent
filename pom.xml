@@ -27,7 +27,7 @@
     <name>ForgeRock OpenBanking Reference Implementation - Parent</name>
     <groupId>com.forgerock.openbanking</groupId>
     <artifactId>forgerock-openbanking-starter-parent</artifactId>
-    <version>1.0.69-SNAPSHOT</version>
+    <version>1.0.70-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
