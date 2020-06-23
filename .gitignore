@@ -4,3 +4,5 @@ target/
 .settings
 .factorypath
 .vscode
+*.releaseBackup
+release.properties
