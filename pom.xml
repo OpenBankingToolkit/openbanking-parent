@@ -94,7 +94,7 @@
         <javax.version>4.0.1</javax.version>
         <zipkin.version>5.9.1</zipkin.version>
         <mockito.core.version>3.2.0</mockito.core.version>
-        <assertj.core.version>3.13.2</assertj.core.version>
+        <assertj.core.version>3.16.1</assertj.core.version>
         <reactor-spring.version>1.0.1.RELEASE</reactor-spring.version>
         <spring-flux.version>2.1.5.RELEASE</spring-flux.version>
         <model-mapper.version>2.3.2</model-mapper.version>
