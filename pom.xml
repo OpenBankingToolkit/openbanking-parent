@@ -63,7 +63,7 @@
         <bouncycastle.version>1.62</bouncycastle.version>
         <slf4j.version>1.7.6</slf4j.version>
         <swagger.version>2.9.2</swagger.version>
-        <swagger.ui.version>2.9.2</swagger.ui.version>
+        <swagger.ui.version>2.10.5</swagger.ui.version>
         <springfox-version>2.6.1</springfox-version>
         <shedlock.version>0.16.1</shedlock.version>
         <javax.version>1.1.0.Final</javax.version>
