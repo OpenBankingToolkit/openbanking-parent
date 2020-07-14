@@ -62,7 +62,7 @@
         <jwt.nimbus.version>7.9</jwt.nimbus.version>
         <bouncycastle.version>1.62</bouncycastle.version>
         <slf4j.version>1.7.6</slf4j.version>
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>3.0.0</swagger.version>
         <swagger.ui.version>2.9.2</swagger.ui.version>
         <springfox-version>2.6.1</springfox-version>
         <shedlock.version>0.16.1</shedlock.version>
