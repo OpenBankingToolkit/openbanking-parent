@@ -27,7 +27,7 @@
     <name>ForgeRock OpenBanking Reference Implementation - Parent</name>
     <groupId>com.forgerock.openbanking</groupId>
     <artifactId>forgerock-openbanking-starter-parent</artifactId>
-    <version>1.0.77-SNAPSHOT</version>
+    <version>1.0.78-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -50,7 +50,7 @@
 
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 
-        <ob.uk.datamodel.version>3.1.2.21</ob.uk.datamodel.version>
+        <ob.uk.datamodel.version>3.1.2.22</ob.uk.datamodel.version>
         <eidas.psd2.sdk.version>1.19</eidas.psd2.sdk.version>
         <spring-security-multi-auth-starter.version>2.1.5.0.0.53</spring-security-multi-auth-starter.version>
 
