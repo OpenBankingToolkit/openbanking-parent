@@ -27,7 +27,7 @@
     <name>ForgeRock OpenBanking Reference Implementation - Parent</name>
     <groupId>com.forgerock.openbanking</groupId>
     <artifactId>forgerock-openbanking-starter-parent</artifactId>
-    <version>1.0.81-SNAPSHOT</version>
+    <version>1.0.82-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -107,6 +107,7 @@
         <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
         <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
         <license-maven-plugin.version>3.0</license-maven-plugin.version>
+	<minidev.version>2.3</minidev.version>
     </properties>
     
     <dependencyManagement>
@@ -403,6 +404,12 @@
                 <artifactId>spring-boot-graceful-shutdown</artifactId>
                 <version>${spring-boot-graceful-shutdown.version}</version>
             </dependency>
+            <dependency>
+                <groupId>net.minidev</groupId>
+                <artifactId>json-smart</artifactId>
+		<version>${minidev.version}</version>
+            </dependency>
+	    
         </dependencies>
     </dependencyManagement>
 
