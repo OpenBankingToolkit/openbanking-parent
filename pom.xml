@@ -57,7 +57,7 @@
         <jodatime.version>2.9.9</jodatime.version>
         <apache.version>4.5.9</apache.version>
         <jersey.version>2.25.1</jersey.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <jwt.nimbus.version>9.0.1</jwt.nimbus.version>
         <bouncycastle.version>1.68</bouncycastle.version>
         <slf4j.version>1.7.6</slf4j.version>
@@ -87,7 +87,7 @@
         <catch-exception.version>2.0</catch-exception.version>
         <jsoup.version>1.11.2</jsoup.version>
         <csv.version>2.1.0</csv.version>
-        <jackson-databind.version>2.9.10.1</jackson-databind.version>
+        <jackson-databind.version>2.9.10.7</jackson-databind.version>
 
         <guava.version>28.0-jre</guava.version>
         <javax.version>4.0.1</javax.version>
