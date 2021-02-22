@@ -48,10 +48,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
 
-        <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR6</spring-cloud.version>
 
-        <ob.uk.datamodel.version>3.1.2.26</ob.uk.datamodel.version>
-        <eidas.psd2.sdk.version>1.19</eidas.psd2.sdk.version>
+        <ob.uk.datamodel.version>3.1.6.0</ob.uk.datamodel.version>
+        <eidas.psd2.sdk.version>1.27</eidas.psd2.sdk.version>
         <spring-security-multi-auth-starter.version>2.1.5.0.0.53</spring-security-multi-auth-starter.version>
 
         <jodatime.version>2.9.9</jodatime.version>
@@ -59,7 +59,7 @@
         <jersey.version>2.25.1</jersey.version>
         <junit.version>4.12</junit.version>
         <jwt.nimbus.version>9.0.1</jwt.nimbus.version>
-        <bouncycastle.version>1.62</bouncycastle.version>
+        <bouncycastle.version>1.68</bouncycastle.version>
         <slf4j.version>1.7.6</slf4j.version>
         <swagger.version>2.9.2</swagger.version>
         <swagger.ui.version>2.9.2</swagger.ui.version>
@@ -584,7 +584,7 @@
                     <artifactId>license-maven-plugin</artifactId>
                     <version>${license-maven-plugin.version}</version>
                     <configuration>
-                        <header>file://${maven.multiModuleProjectDirectory}/legal/LICENSE.txt</header>
+                        <header>legal/LICENSE.txt</header>
                         <includes>
                             <include>**/*.java</include>
                             <include>pom.xml</include>
