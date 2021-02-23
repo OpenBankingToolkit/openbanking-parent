@@ -71,7 +71,7 @@
         <micrometer.version>1.5.5</micrometer.version>
         <spring-boot-admin.version>2.1.4</spring-boot-admin.version>
         <selenium.version>3.14.0</selenium.version>
-        <unirest-java.version>2.3.06</unirest-java.version>
+        <unirest-java.version>3.11.11</unirest-java.version>
         <jjwt.version>0.10.5</jjwt.version>
         <minimal-json.version>0.9.5</minimal-json.version>
         <jmockdata.version>3.1.0</jmockdata.version>
