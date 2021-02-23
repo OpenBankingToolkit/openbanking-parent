@@ -69,7 +69,7 @@
         <tunyk.version>1.0</tunyk.version>
         <logstash.version>4.11</logstash.version>
         <micrometer.version>1.5.5</micrometer.version>
-        <spring-boot-admin.version>2.1.4</spring-boot-admin.version>
+        <spring-boot-admin.version>2.4.0</spring-boot-admin.version>
         <selenium.version>3.14.0</selenium.version>
         <unirest-java.version>2.3.06</unirest-java.version>
         <jjwt.version>0.10.5</jjwt.version>
