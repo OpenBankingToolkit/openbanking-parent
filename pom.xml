@@ -79,7 +79,7 @@
         <docker-compose-maven-plugin.version>4.0.0</docker-compose-maven-plugin.version>
         <jackson-datatype-joda.version>2.9.7</jackson-datatype-joda.version>
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
-        <google-cloud-logging-logback-version>0.73.0-alpha</google-cloud-logging-logback-version>
+        <google-cloud-storage.version>1.113.15</google-cloud-storage.version>
         <assertj-joda-time.version>2.2.0</assertj-joda-time.version>
         <geoIP.version>2.8.0</geoIP.version>
         <jaxb.sun.version>2.2.11</jaxb.sun.version>
@@ -145,8 +145,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-
+            <!-- GCP sdk -->
+            <dependency>
+                <groupId>com.google.cloud</groupId>
+                <artifactId>google-cloud-storage</artifactId>
+                <version>${google-cloud-storage.version}</version>
+            </dependency>
             <!-- JWT and keys -->
             <dependency>
                 <groupId>com.nimbusds</groupId>
@@ -166,7 +170,7 @@
                 <version>${commons-csv.version}</version>
             </dependency>
             <dependency>
-		<groupId>org.apache.commons</groupId>
+		        <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
