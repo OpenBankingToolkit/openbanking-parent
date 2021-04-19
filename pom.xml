@@ -21,7 +21,8 @@
     under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <name>ForgeRock OpenBanking Reference Implementation - Parent</name>
@@ -34,7 +35,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.5.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <organization>
@@ -108,9 +109,9 @@
         <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
         <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
         <license-maven-plugin.version>3.0</license-maven-plugin.version>
-	<minidev.version>2.3</minidev.version>
+        <minidev.version>2.3</minidev.version>
     </properties>
-    
+
     <dependencyManagement>
         <dependencies>
             <!-- OpenBanking -->
@@ -120,9 +121,9 @@
                 <version>${eidas.psd2.sdk.version}</version>
             </dependency>
             <dependency>
-            	<groupId>com.forgerock.openbanking.uk</groupId>
-            	<artifactId>openbanking-uk-datamodel</artifactId>
-            	<version>${ob.uk.datamodel.version}</version>
+                <groupId>com.forgerock.openbanking.uk</groupId>
+                <artifactId>openbanking-uk-datamodel</artifactId>
+                <version>${ob.uk.datamodel.version}</version>
             </dependency>
             <!-- uk-datamodel test support jar -->
             <dependency>
@@ -170,7 +171,7 @@
                 <version>${commons-csv.version}</version>
             </dependency>
             <dependency>
-		        <groupId>org.apache.commons</groupId>
+                <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
@@ -378,7 +379,7 @@
                 <groupId>org.modelmapper</groupId>
                 <artifactId>modelmapper</artifactId>
                 <version>${model-mapper.version}</version>
-	    </dependency>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-webflux</artifactId>
@@ -412,9 +413,9 @@
             <dependency>
                 <groupId>net.minidev</groupId>
                 <artifactId>json-smart</artifactId>
-		<version>${minidev.version}</version>
+                <version>${minidev.version}</version>
             </dependency>
-	    
+
         </dependencies>
     </dependencyManagement>
 
@@ -458,10 +459,10 @@
         <connection>scm:git:git@github.com:OpenBankingToolkit/openbanking-parent.git</connection>
         <developerConnection>scm:git:git@github.com:OpenBankingToolkit/openbanking-parent.git</developerConnection>
         <url>https://github.com/OpenBankingToolkit/openbanking-parent.git</url>
-    <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
-  <distributionManagement>
+    <distributionManagement>
         <repository>
             <id>maven.forgerock.org-community</id>
             <name>maven.forgerock.org-releases</name>
