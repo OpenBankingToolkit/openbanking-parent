@@ -105,7 +105,7 @@
         <spring-boot-graceful-shutdown.version>2.1.1</spring-boot-graceful-shutdown.version>
         <dockerfile-maven-plugin.version>1.4.12</dockerfile-maven-plugin.version>
         <write-text-files-maven-plugin.version>1.1</write-text-files-maven-plugin.version>
-        <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
+        <maven-release-plugin.version>3.0.0-M4</maven-release-plugin.version>
         <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
         <license-maven-plugin.version>3.0</license-maven-plugin.version>
 	<minidev.version>2.3</minidev.version>
