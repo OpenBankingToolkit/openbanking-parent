@@ -89,7 +89,7 @@
         <csv.version>2.1.0</csv.version>
         <jackson-databind.version>2.9.10.7</jackson-databind.version>
 
-        <guava.version>28.0-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <javax.version>4.0.1</javax.version>
         <zipkin.version>5.12.6</zipkin.version>
         <mockito.core.version>3.5.11</mockito.core.version>
