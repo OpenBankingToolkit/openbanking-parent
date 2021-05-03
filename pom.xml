@@ -108,7 +108,7 @@
         <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
         <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
         <license-maven-plugin.version>3.0</license-maven-plugin.version>
-        <minidev.version>2.3</minidev.version>
+        <minidev.version>2.4.7</minidev.version>
     </properties>
 
     <dependencyManagement>
