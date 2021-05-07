@@ -133,7 +133,7 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>org.forgeock.spring.security</groupId>
+                <groupId>com.forgeock.spring.security</groupId>
                 <artifactId>spring-security-multi-auth-starter</artifactId>
                 <version>${spring-security-multi-auth-starter.version}</version>
             </dependency>
