@@ -27,7 +27,7 @@
     <name>ForgeRock OpenBanking Reference Implementation - Parent</name>
     <groupId>com.forgerock.openbanking</groupId>
     <artifactId>forgerock-openbanking-starter-parent</artifactId>
-    <version>1.1.90</version>
+    <version>1.1.91-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -458,7 +458,7 @@
         <connection>scm:git:git@github.com:OpenBankingToolkit/openbanking-parent.git</connection>
         <developerConnection>scm:git:git@github.com:OpenBankingToolkit/openbanking-parent.git</developerConnection>
         <url>https://github.com/OpenBankingToolkit/openbanking-parent.git</url>
-        <tag>1.1.90</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
