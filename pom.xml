@@ -139,7 +139,7 @@
                 <version>${spring-security-multi-auth-starter.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.forgeock.spring.security</groupId>
+                <groupId>com.forgerock.spring.security</groupId>
                 <artifactId>spring-security-multi-auth-starter</artifactId>
                 <version>${fr-spring-security-multi-auth-starter.version}</version>
             </dependency>
