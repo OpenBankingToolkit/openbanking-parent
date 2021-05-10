@@ -27,7 +27,7 @@
     <name>ForgeRock OpenBanking Reference Implementation - Parent</name>
     <groupId>com.forgerock.openbanking</groupId>
     <artifactId>forgerock-openbanking-starter-parent</artifactId>
-    <version>1.1.94-SNAPSHOT</version>
+    <version>1.1.95-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -139,7 +139,7 @@
                 <version>${spring-security-multi-auth-starter.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.forgeock.spring.security</groupId>
+                <groupId>com.forgerock.spring.security</groupId>
                 <artifactId>spring-security-multi-auth-starter</artifactId>
                 <version>${fr-spring-security-multi-auth-starter.version}</version>
             </dependency>
