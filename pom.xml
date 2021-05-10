@@ -52,7 +52,8 @@
 
         <ob.uk.datamodel.version>3.1.6.3</ob.uk.datamodel.version>
         <eidas.psd2.sdk.version>1.27</eidas.psd2.sdk.version>
-        <spring-security-multi-auth-starter.version>1.0.0</spring-security-multi-auth-starter.version>
+        <spring-security-multi-auth-starter.version>2.1.5.0.0.53</spring-security-multi-auth-starter.version>
+        <fr-spring-security-multi-auth-starter.version>1.0.1</fr-spring-security-multi-auth-starter.version>
 
         <jodatime.version>2.9.9</jodatime.version>
         <apache.version>4.5.9</apache.version>
@@ -133,9 +134,14 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>com.forgeock.spring.security</groupId>
+                <groupId>dev.openbanking4.spring.security</groupId>
                 <artifactId>spring-security-multi-auth-starter</artifactId>
                 <version>${spring-security-multi-auth-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.forgeock.spring.security</groupId>
+                <artifactId>spring-security-multi-auth-starter</artifactId>
+                <version>${fr-spring-security-multi-auth-starter.version}</version>
             </dependency>
             <!-- Spring -->
             <dependency>
