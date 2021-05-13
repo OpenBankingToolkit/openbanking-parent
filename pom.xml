@@ -53,7 +53,7 @@
         <ob.uk.datamodel.version>3.1.6.4</ob.uk.datamodel.version>
         <eidas.psd2.sdk.version>1.27</eidas.psd2.sdk.version>
         <spring-security-multi-auth-starter.version>2.1.5.0.0.53</spring-security-multi-auth-starter.version>
-        <fr-spring-security-multi-auth-starter.version>1.0.1</fr-spring-security-multi-auth-starter.version>
+        <fr-spring-security-multi-auth-starter.version>1.0.2</fr-spring-security-multi-auth-starter.version>
 
         <jodatime.version>2.9.9</jodatime.version>
         <apache.version>4.5.9</apache.version>
