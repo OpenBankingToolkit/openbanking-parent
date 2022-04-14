@@ -88,7 +88,7 @@
         <catch-exception.version>2.0</catch-exception.version>
         <jsoup.version>1.14.2</jsoup.version>
         <csv.version>2.1.0</csv.version>
-        <jackson-databind.version>2.9.10.7</jackson-databind.version>
+        <jackson-databind.version>2.12.6.1</jackson-databind.version>
 
         <guava.version>30.0-jre</guava.version>
         <javax.version>4.0.1</javax.version>
